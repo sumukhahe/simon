@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --heading_width_height: 350px;
+    --butt_width_height: 150px;
+  }
+  
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+h1 {
+  
+    color:#2C3E50;
+    text-align: center;
+    text-shadow: 0 2px 10px rgba(0,0,0,.2);
+    margin: 70px 0px 0px;
+}
+
+h6 {
+  color:#154360;
+    text-align: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+/* Buttons */
+
+.swal-button {
+    height:50px;
+    width: 150px;
+    background-color: #ff4954;
+}
+.button-container {
+
+    display: grid;
+  margin-top: 32px;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+    width: var(--butt_width_height);
+    height: var(--butt_width_height);
+    cursor: pointer;
+  }
+
+  /* Button - 1 */
+
+  #butt1 {
+    background-color: #ff0000;
+    border: none;
+    box-shadow: -2px 6px 6px rgba(119,119,119,.8);
+    border-radius: 12px;
+    transition: 0.4s;
+  }
+
+  #butt1:hover, #butt1:focus {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 4px 8px 10px #2b2b2b;
+  }
+  
+  #butt1:active, #butt1.activated {
+    box-shadow: none;
+    background-color: rgb(255, 0, 0);
+    transform: translateY(10px);
+  }
+
+  /* End of Button - 1 */
+  .swal-modal {
+      border-radius: 25px;
+  }
+  /* Button - 2 */
+
+  #butt2 {
+    background-color: #009b10 ;
+    border: none;
+    box-shadow:  -2px 6px 6px rgba(119,119,119,.8);
+    border-radius: 12px;
+    transition: 0.4s;
+  }
+
+  #butt2:hover, #butt2:focus {
+    background-color: rgb(0, 155, 16);
+    box-shadow: 4px 8px 4px #2b2b2b;
+  }
+
+  #butt2:active, #butt2.activated {
+    box-shadow: none;
+    background-color: rgb(0, 155, 16);
+    transform: translateY(10px);
+  }
+
+  /* End of Button - 2 */
+  
+  /*Button - 3 */
+
+  #butt3 {
+    background-color: #00aeff;
+    border: none;
+    box-shadow: -2px 6px 6px rgba(119,119,119,.8);
+    border-radius: 12px;
+    transition: 0.3s;
+  }
+
+  #butt3:hover, #butt3:focus {
+    background-color: rgb(0, 174, 255);
+    box-shadow: 4px 8px 4px #2b2b2b;
+  }
+
+  #butt3:active, #butt3.activated {
+    box-shadow: none;
+    background-color: rgb(0, 174, 255);
+    transform: translateY(10px);
+  }
+
+  /* End of Button - 3 */
+
+  /* Button - 4 */
+
+  #butt4 {
+    background-color: #ffb900;
+    border: none;
+    box-shadow: -2px 6px 6px rgba(119,119,119,.8);
+    border-radius: 12px;
+    transition: 0.3s;
+  }
+  
+  #butt4:hover, #butt4:focus {
+    background-color: rgb(255, 187, 0);
+    box-shadow: 4px 8px 4px #2b2b2b;
+  }
+  
+  #butt4:active, #butt4.activated {
+    box-shadow: none;
+    background-color: rgb(255, 187, 0);
+    transform: translateY(10px);
+  }
+
+  /* End of Button - 4 */
+
+  .hide-butt {
+    display: none;
+  }
+
+  .start-butt-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #start-butt {
+    /* width: auto; */
+    /* height: auto; */
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    padding: 10px 25px 10px 25px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #800020;
+    border: none;
+    box-shadow: 2px 5px 10px #3b0032;
+    cursor: pointer;
+  }
+.swal-text {
+  color: #17202A;
+}
+  #start-butt2 {
+    /* width: auto; */
+    /* height: auto; */
+    
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    padding: 10px 25px 10px 25px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #17202A;
+    border: none;
+    box-shadow: 2px 5px 10px #3b0032;
+    cursor: pointer;
+  }
+
+  .player {
+    margin-top: 44px;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+  
+  .unclickable {
+    pointer-events: none;
+  }
+
+
+  /* Mobile Version and ipad Version */
+
+
+@media(max-width: 700px) {
+    :root {
+      --heading_width: 240px;
+      --butt_width_height: 100px;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 50px;
+        
+      }
+
+      .button-container {
+        margin-top: 28px;
+        grid-gap: 16px;
+      }
+
+      #start-butt {
+        margin-top: 28px;
+        font-size: 0.9rem;
+      }
+    
+      .player {
+        margin-top: 40px;
+        font-size: 1rem;
+      }
+    }
+
+
+    @media (max-width:1000px) and (min-width:701px) {
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 200px;
+            
+          }
+          .button-container {
+            margin-top: 28px;
+            grid-gap: 16px;
+          }
+    
+          #start-butt {
+            margin-top: 28px;
+            font-size: 1.2rem;
+          }
+        
+          .player {
+            margin-top: 40px;
+            font-size: 1rem;
+    }
+}
+
+
+
+@media (max-width:1400px) and (min-width:1001px) {
+
+    h1 {
+        font-size: 3.5rem;
+        margin-top: 300px;
+        
+      }
+      .button-container {
+        margin-top: 28px;
+        grid-gap: 16px;
+      }
+
+      #start-butt {
+        margin-top: 28px;
+        font-size: 1.2rem;
+      }
+    
+      .player {
+        margin-top: 40px;
+        font-size: 1rem;
+}
+}
+
+@media (max-width:699px) and (min-width:400px) {
+
+    .swal-modal {
+             transform: scale(0.7);
+    }
+    h1 {
+        font-size: 1.9rem;
+        margin-top: 70px;
+        
+      }
+      .button-container {
+        margin-top: 28px;
+        grid-gap: 16px;
+      }
+
+      #start-butt {
+        margin-top: 28px;
+        font-size: 1.2rem;
+      }
+    
+      .player {
+        margin-top: 40px;
+        font-size: 1rem;
+}
+}
